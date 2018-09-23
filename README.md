@@ -29,7 +29,7 @@ https://inventory.authenticated-services.com/
 ```
 
 ### IMPORTANT
-To use this api, set the authorization header on all requests equal to the custom key `DgUGBQ8BAQQKCgIGBAgBBA`.
+To use this api, you must set the authorization header to an api key.
 
 ## Endpoints
 
