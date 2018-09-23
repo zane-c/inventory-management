@@ -1,0 +1,25 @@
+{
+  "name": "inventory-management-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "deploy": "scp -r -P 7822",
+    "ssh": "ssh -p 7822",
+    "server": "nohup node app/server.js &",
+    "kill": "pkill node",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "Zane Christenson",
+  "license": "CC-BY-2.5",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "node-restful": "^0.2.6",
+    "sqlstring": "^2.3.1"
+  },
+  "devDependencies": {}
+}

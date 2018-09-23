@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteRule ^$ http://127.0.0.1:49152/ [P,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://127.0.0.1:49152/$1 [P,L]
+
+# Deny every js by default
+<Files *.js>
+  deny from all
+</Files>
+<Files *.json>
+  deny from all
+</Files>
+<Files *.out>
+  deny from all
+</Files>
+# But allow nodejs.js
+<Files nodejs.js>
+  allow from all
+</Files>
